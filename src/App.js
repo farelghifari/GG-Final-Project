@@ -5,12 +5,14 @@ import Card from './components/Card/index'
 function App() {
   return (
     <div className="App">
-      <Card
-       imageUrl={data.album.images[0].url}
-       title={data.album.name}
-       artist={data.artists[0].name}
-       externalUrl={data.album.artists[0].external_urls.spotify}
-      />
+      {data.map(card => 
+        <Card key={card}
+        imageUrl={card.album.images[0].url}
+        title={card.album.name}
+        artist={card.artists[0].name}
+        externalUrl={card.album.external_urls.spotify}
+        />
+      )}
     </div>
   );
 }

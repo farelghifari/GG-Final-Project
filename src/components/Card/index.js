@@ -1,6 +1,6 @@
 function Card ({imageUrl, title, artist, externalUrl}) {
     return (
-        <div>
+        <div className="Card">
             <div className="Cover">
                 <img src={imageUrl} width="300" height="300" className="rotate" />
             </div>
