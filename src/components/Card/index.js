@@ -1,4 +1,4 @@
-function Card ({imageUrl, title, artist, externalUrl}) {
+export default function Card ({imageUrl, title, artist, externalUrl}) {
     return (
         <div className="Card">
             <div className="Cover">
@@ -14,5 +14,3 @@ function Card ({imageUrl, title, artist, externalUrl}) {
         </div>
     )
 }
-
-export default Card;
