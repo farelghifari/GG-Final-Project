@@ -2,7 +2,7 @@ export default function Card ({imageUrl, title, artist, externalUrl}) {
     return (
         <div className="Card">
             <div className="Cover">
-                <img src={imageUrl} width="300" height="300" className="rotate" />
+                <img src={imageUrl} width="300" height="300" />
             </div>
             <div className="Container">
                 <h2>{title}</h2>
