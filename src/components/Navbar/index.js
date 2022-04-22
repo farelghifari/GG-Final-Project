@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import { urlGet } from '../Login/index';
-import { Logout } from '..Login/Index';
-import { setToken } from '..Login/index';
+import { urlGet } from '../utils/spotifyconf';
+import { Logout } from '../utils/OAuth';
+import { setToken } from '../store/Auth';
 
 const Navbar = ({ children }) => {
   const token = useSelector((state) => state.Auth.token);

@@ -56,17 +56,6 @@ export default function Login() {
                     </Container>
                 </main>
             )} 
-            {isAuthorize && (
-                <main className="container" id="home">
-                <CreatePlaylistForm
-                    accessToken={window.location.hash.access_token}
-                    userId={CLIENT_ID}
-                    uriTracks={REDIRECT_URL_AFTER_LOGIN}
-                />
-
-                <hr />
-                </main>
-            )}
         </>
     )
     
